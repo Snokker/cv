@@ -1,45 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- meta data -->
     <meta charset="UTF-8">
     <meta name="description" content="Lisa Mantel's sweet CV">
     <meta name="keywords" content="CV, curriculum vitae, Lisa Mantel, Fried Egg">
     <meta name="author" content="Lisa Mantel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Index page CV</title>
+    <!-- titel -->
+    <title>Index page CV</title>
+    <!-- Hoort bij de example -->
+    <script src="../../CV/javascript/vis-4.21.0/dist/vis.js"></script>
+    <link href="../../CV/javascript/vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
 
-<style type="text/css">
-    body, html {
-      font-family: sans-serif;
-    }
-  </style>
-
-  <script src="../../CV/javascript/vis-4.21.0/dist/vis.js"></script>
-  <link href="../../CV/javascript/vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
+    <style>
+        body, html {
+            font-family: courier;
+        }
+        body{
+            /* Alles in het midden plaatsen*/
+            /* text-align: center; */
+            margin: auto;
+            width: 25%;
+            border: 1px solid goldenrod;
+            padding: 10px;
+            background-color: white;
+        }
+        h1 {
+            background-color: goldenrod;
+        }
+        p {
+            text-align: inherit; 
+        }
+        table { 
+            width: 100%;
+            padding: 5px;
+        }
+        td, th {
+            text-align: left;
+            /* padding: 8px; */
+        }
+        tr:nth-child(even){
+            background-color: goldenrod;
+        }
+    </style>
 </head>
 <body>
-<div id="visualization"></div>
 
-<script type="text/javascript">
-  // DOM element where the Timeline will be attached
-  var container = document.getElementById('visualization');
+    <header id="person-data">
+        <h1>CURRICULUM VITAE</h1>
+    </header>
+    <section>
+        <table>
+                <tr>
+                    <th>PERSOONS INFO</th>
+                </tr>
+                <tr>
+                    <th>naam:</th>
+                    <th>Lisa Mantel</th>
+                </tr>
+                <tr>
+                    <th>leeftijd:</th>
+                    <th>zeer oud</th>
+                </tr>
+                <tr>
+                    <th>hobbies:</th>
+                    <th>helaas heb ik niet</th>
+                </tr>
+            </table>
+    </section>
+    
+    <!--res timeline: http://visjs.org/docs/timeline/ -->
+    <div id="visualization"></div>
 
-  // Create a DataSet (allows two way data-binding)
-  var items = new vis.DataSet([
-    {id: 1, content: 'item 1', start: '2013-04-20'},
-    {id: 2, content: 'item 2', start: '2013-04-14'},
-    {id: 3, content: 'item 3', start: '2013-04-18'},
-    {id: 4, content: 'item 4', start: '2013-04-16', end: '2013-04-19'},
-    {id: 5, content: 'item 5', start: '2013-04-25'},
-    {id: 6, content: 'item 6', start: '2013-04-27'}
-  ]);
+    <script type="text/javascript">
+    // DOM element where the Timeline will be attached
+    var container = document.getElementById('visualization');
 
-  // Configuration for the Timeline
-  var options = {};
+    // Create a DataSet (allows two way data-binding)
+    var items = new vis.DataSet([
+        {id: 1, content: 'de dag dat mijn moeder spijt kreeg', start: '1994-03-29'},
+        {id: 2, content: 'basis school', start: '1998-01-01'},
+        {id: 3, content: 'middelbare school vwo', start: '2006-01-01'},
+        {id: 4, content: 'HKU gameart', start: '2013-01-01'},
+        {id: 5, content: 'Informatica uu', start: '2017-01-01'},
+        {id: 6, content: 'stage gamious', start: '2015-01-01'},
+    ]);
 
-  // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
-</script>
+    // Configuration for the Timeline
+    var options = {
+        start:'1994',
+        end:'2018',
+        // min:'1994',
+        // max:'2018',
+        timeAxis: {scale: 'year', step: 5},
+        minHeight: 300,
+    };
+
+    // Create a Timeline
+    var timeline = new vis.Timeline(container, items, options);
+    </script>
+
+    <!-- deze shit heb ik ook niet zelf gemaakt -->
+    
+
+    <footer>
+        <h6>gemaakt met door je moeder</h6>
+    </footer>
 </body>
 
 </html>
