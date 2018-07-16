@@ -11,8 +11,9 @@
     <title>Index page CV</title>
     <!-- Hoort bij de example -->
     <script src="../../CV/javascript/vis-4.21.0/dist/vis.js"></script>
-    <script src="../../CV/javascript/verf.js"></script>
     <link href="../../CV/javascript/vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
+    <!-- Hoort bij: https://codepen.io/darrylhuffman/pen/prrzVQ -->
+    <script src="../../CV/javascript/verf.js"></script>
 
     <style>
         body, html {
@@ -32,12 +33,13 @@
             /* text-align: center; */
             margin: auto;
             width: 25%;
-            border: 1px solid goldenrod;
+            border: 5px solid black;
             padding: 10px;
             background-color: white;
         }
         h1 {
-            background-color: goldenrod;
+            background-color: whitesmoke;
+            border: 1px dotted black;
         }
         p {
             text-align: inherit; 
@@ -45,18 +47,23 @@
         table { 
             width: 100%;
             padding: 5px;
+            border: 1px dotted black;
         }
         td, th {
             text-align: left;
             /* padding: 8px; */
         }
         tr:nth-child(even){
-            background-color: goldenrod;
+            background-color: whitesmoke;
         }
+        .vis-item {
+            border-color: orange;
+            background-color: yellow;
+            }
     </style>
 </head>
 <body >
-    <canvas id="glscreen"></canvas>
+<canvas id="glscreen"></canvas>
 <div id="blok">
     <header id="person-data">
         <h1>CURRICULUM VITAE</h1>
@@ -110,12 +117,13 @@
     var timeline = new vis.Timeline(container, items, options);
     </script>
 
-    <!-- deze shit heb ik ook niet zelf gemaakt -->
     <footer>
         <h6>gemaakt met door je moeder</h6>
     </footer>
 </div>
 
+
+    <!-- deze shit heb ik ook niet zelf gemaakt -->
 <script id="2d-fragment-shader" type="x-shader/x-fragment">// <![CDATA[
     #ifdef GL_ES
     precision mediump float;
@@ -245,7 +253,6 @@
           gl_Position = vec4(a_position, 0, 1);
       }
       // ]]></script>
-  <!-- <canvas id="glscreen"></canvas> -->
 
 </body>
 
