@@ -32,6 +32,21 @@ h1 {
     background-color: whitesmoke;
     border: 1px dotted black;
 }
+.circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .circular--landscape img{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
 p {
     text-align: inherit; 
 }
@@ -52,8 +67,8 @@ tr:nth-child(even){
     border: 1px dotted black;  
 }
 .vis-item {
-    border-color: orange;
-    background-color: yellow;
+    border-color: black;
+    background-color: whitesmoke;
     }
     /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
@@ -71,6 +86,6 @@ tr:nth-child(even){
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: #4CAF50;} /* Green */
-.css {width: 80%; background-color: #2196F3;} /* Blue */
-.js {width: 65%; background-color: #f44336;} /* Red */
+.html {width: 90%; background-color: black;}
+.css {width: 80%; background-color: black;}
+.js {width: 65%; background-color: black;}

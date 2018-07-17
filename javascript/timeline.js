@@ -15,8 +15,8 @@
  var options = {
      start:'1994',
      end:'2018',
-     // min:'1994',
-     // max:'2018',
+     min:'1950',
+     max:'2050',
      timeAxis: {scale: 'year', step: 5},
      minHeight: 300,
  };
