@@ -28,7 +28,7 @@ canvas {
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
-h1 {
+h1, h4 {
     background-color: whitesmoke;
     border: 1px dotted black;
 }
