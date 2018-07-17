@@ -58,6 +58,22 @@ img{
     width: 5%;
     position: relative;
 }
+#comp{
+    width: 15%;
+    position: relative;
+}
+#triforce{
+    width: 12%;
+    position: relative;
+}
+#apple{
+    width: 20%;
+    position: relative;
+}
+#patatje{
+    width: 18%;
+    position: relative;
+}
 p {
     text-align: inherit; 
 }
@@ -68,6 +84,7 @@ table {
 }
 td, th {
     text-align: left;
+    width: 50%;
     /* padding: 8px; */
 }
 tr:nth-child(even){
@@ -114,3 +131,9 @@ tr:nth-child(even){
 .vorm {width: 80%; background-color: black;}
 .lvl {width: 65%; background-color: black;}
 .game {width: 70%; background-color: black;}
+
+.engels {width: 80%; background-color: black;}
+.ms {width: 20%; background-color: black;}
+.taart {width: 90%; background-color: black;}
+.pizza {width: 95%; background-color: black;}
+.teen {width: 100%; background-color: black;}
