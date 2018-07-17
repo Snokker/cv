@@ -1,0 +1,76 @@
+body, html {
+    font-family: courier;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#blok{
+    /* Alles in het midden plaatsen*/
+    margin: auto;
+    width: 25%;
+    border: 5px solid black;
+    padding: 10px;
+    background-color: white;
+    /*scrollable maken*/
+    overflow-y: scroll;
+    min-width: 300px;
+    height: 600px;
+    /* in het midden van het midden positioneren*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+h1 {
+    background-color: whitesmoke;
+    border: 1px dotted black;
+}
+p {
+    text-align: inherit; 
+}
+table { 
+    width: 100%;
+    padding: 5px;
+    border: 1px dotted black;
+}
+td, th {
+    text-align: left;
+    /* padding: 8px; */
+}
+tr:nth-child(even){
+    background-color: whitesmoke;
+}
+#tijdlijn{
+    padding: 5px;
+    border: 1px dotted black;  
+}
+.vis-item {
+    border-color: orange;
+    background-color: yellow;
+    }
+    /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: right; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 20px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
