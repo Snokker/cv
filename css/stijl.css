@@ -97,6 +97,20 @@ tr:nth-child(even){
     color: white; /* White text color */
 }
 
-.html {width: 90%; background-color: black;}
-.css {width: 80%; background-color: black;}
-.js {width: 65%; background-color: black;}
+.C {width: 65%; background-color: black;}
+.overall {width: 80%; background-color: black;}
+.logica {width: 70%; background-color: black;}
+.databases {width: 65%; background-color: black;}
+.html {width: 70%; background-color: black;}
+.css {width: 70%; background-color: black;}
+.js {width: 50%; background-color: black;}
+.unity {width: 90%; background-color: black;}
+
+.photoshop {width: 90%; background-color: black;}
+.illustrator {width: 65%; background-color: black;}
+.dried {width: 80%; background-color: black;}
+.animatie {width: 65%; background-color: black;}
+.kleuren {width: 85%; background-color: black;}
+.vorm {width: 80%; background-color: black;}
+.lvl {width: 65%; background-color: black;}
+.game {width: 70%; background-color: black;}
