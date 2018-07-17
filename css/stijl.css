@@ -32,7 +32,9 @@ h1 {
     background-color: whitesmoke;
     border: 1px dotted black;
 }
-.circular--landscape {
+
+/* deze maakt er een cirkel van */
+/* .circular--landscape {
     display: inline-block;
     position: relative;
     width: 200px;
@@ -46,6 +48,15 @@ h1 {
     width: auto;
     height: 100%;
     margin-left: -50px;
+} */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+#eitje{
+    width: 5%;
+    position: relative;
 }
 p {
     text-align: inherit; 
